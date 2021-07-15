@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://css.gg/facebook.css' rel='stylesheet'>
+    <link href='https://css.gg/google.css' rel='stylesheet'>
+    <link href='https://css.gg/instagram.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h1 id="login">Login</h1>
+            <div class="icons">
+            <span class="gg-facebook"></span>
+            <span class="gg-instagram"></span>
+            <span class="gg-google"></span>
+        </div>
+            <form action="">
+               <h1 id="email"> E-mail</h1>
+               <div class="bar"></div>
+                <input id="inputemail" type="email" placeholder="E-mail">
+                <h1 id="password">Password</h1>
+                <div class="bar"></div>
+                <input id="inputpass" type="password" placeholder="Password"> <br>
+                <div class="button">
+                    <a href="">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -19.924108,
+                lng: -43.943470
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+</body>
+</html>

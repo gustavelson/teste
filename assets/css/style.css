@@ -1,0 +1,90 @@
+body {
+    background-color: #be2edd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.formulario {
+    width: 300px;
+    height: 440px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#login {
+    text-align: center;
+
+}
+
+#email, #password {
+    font-size: 20px;
+    margin-left: 15px;
+    
+}
+
+#inputemail, #inputpass {
+    margin-left: 15px;
+    border: solid 1px lightgray;
+    outline: none;
+    transition: all 0.3s ease;
+    height: 30px;
+    width: 250px;
+}
+
+button {
+    margin-left: 120px;
+    margin-top: 40px;
+    
+    
+
+}
+
+.bar {
+    border-bottom: 2px solid #be2edd;
+    width: 150px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    transition: all 0.3s ease;
+}
+
+.button {
+    margin-left: 120px;
+    margin-top: 20px;
+    border: 1px solid #be2edd;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    background-color: #be2edd;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+   background-color: white;
+   
+}
+
+a:hover {
+    color: purple;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+.gg-facebook, .gg-instagram, .gg-google {
+    margin-right: 30px;
+}
